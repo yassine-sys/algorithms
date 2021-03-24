@@ -1,0 +1,15 @@
+ALGORITHM algorithms
+VAR
+ch := "hello world."
+length_of_sentence,number_of_words,number_of_vowels:INTEGER
+BEGIN
+    length_of_sentence=ch.length
+write(length_of_sentence)
+number_of_words=ch.split(" ").length
+write(number_of_words)
+number_of_vowels=ch.match(/[aeiou]/gi).length
+write(number_of_vowels)
+END
+
+
+
